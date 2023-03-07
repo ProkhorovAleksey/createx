@@ -194,6 +194,7 @@ color: #FF3F3A;
 .header__play:hover svg {
     box-shadow: 0 0 0 14px rgba(229, 100, 95, 0.12);
 }
+
 .header__title {
 font-weight: 900;
 font-size: 64px;
