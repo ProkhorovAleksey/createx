@@ -186,12 +186,12 @@ color: #FF3F3A;
     margin-bottom: 24px;
 }
 
-.header__play svg {
+.header__play-video svg {
     border-radius: 50%;
     margin-right: 16px;
     transition: all .3s;
 }
-.header__play:hover svg {
+.header__play-video:hover svg {
     box-shadow: 0 0 0 14px rgba(229, 100, 95, 0.12);
 }
 .header__title {
