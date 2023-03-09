@@ -1,3 +1,6 @@
+/* ---------------------------GLOBAL------------------------------------ */
+/* ---------------------------GLOBAL------------------------------------ */
+
 html,body {
     font-family: Lato, sans-serif;
     color: #424551;
@@ -24,6 +27,12 @@ html,body {
 }
 .main__cert {
     margin-bottom: -46px;
+}
+.main__team {
+    padding: 160px 0 180px;
+}
+.main__testimonials {
+    padding-bottom: 195px;
 }
 .button {
     display: inline-block;
@@ -78,8 +87,8 @@ html,body {
 .heading--text-center {
     text-align: center;
 }
-/* --------------------------------------------------------------- */
-/* --------------------------------------------------------------- */
+/* ---------------------------HEADER TOP------------------------------------ */
+/* ---------------------------HEADER TOP------------------------------------ */
 
 
 
@@ -157,8 +166,8 @@ color: #FF3F3A;
 }
 
 
-/* --------------------------------------------------------------- */
-/* --------------------------------------------------------------- */
+/* ---------------------------HEADER BODY------------------------------------ */
+/* ---------------------------HEADER BODY------------------------------------ */
 
 .header__body {
     flex: 1 1 auto;
@@ -186,12 +195,12 @@ color: #FF3F3A;
     margin-bottom: 24px;
 }
 
-.header__play svg {
+.header__play-video svg {
     border-radius: 50%;
     margin-right: 16px;
     transition: all .3s;
 }
-.header__play:hover svg {
+.header__play-video:hover svg {
     box-shadow: 0 0 0 14px rgba(229, 100, 95, 0.12);
 }
 
@@ -240,7 +249,8 @@ margin-bottom: 50px;
     line-height: 130%;
     margin-right: 12px;  
 }
-/* --------------------------------------------------------------- */
+/* ---------------------------ABOUT------------------------------------ */
+/* ---------------------------ABOUT------------------------------------ */
 
 .about {
     
@@ -339,8 +349,8 @@ line-height: 130%;
 margin-right: 16px;
 }
 
-/* --------------------------------------------------------------- */
-/* --------------------------------------------------------------- */
+/* ---------------------------DIRECTIONS------------------------------------ */
+/* ---------------------------DIRECTIONS------------------------------------ */
 
 .directions__inner {
     position: relative;
@@ -466,7 +476,7 @@ margin-right: 16px;
 .directions__link-btn::after {
     display: block;
     content: "";
-    background: url(../images/icons/arrow-red.svg) 0 2px / 100% no-repeat;
+    background: url(../images/icons/arrow-right-red.svg) 0 2px / 100% no-repeat;
     width: 24px;
     height: 24px;
     margin-left: 11px;
@@ -504,8 +514,8 @@ margin-right: 16px;
     background-color: #7772F1;
 }
 
-/* --------------------------------------------------------------- */
-/* --------------------------------------------------------------- */
+/* ---------------------------CERTIFICAT------------------------------------ */
+/* ---------------------------CERTIFICAT------------------------------------ */
 
 .cert {
 }
@@ -551,4 +561,270 @@ margin-right: 16px;
 .cert__image-box {
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     border-radius: 4px;
+}
+
+/* ---------------------------TEAM------------------------------------ */
+/* ---------------------------TEAM------------------------------------ */
+
+.team {
+    background: url(../images/decor/team-bg.svg) 210px 30px no-repeat, #F4F5F7;
+}
+.team__inner {
+}
+.team__heading {
+    margin-bottom: 60px;
+    position: relative;
+}
+.heading__subtitle {
+}
+.heading__title {
+
+}
+
+.team__slider .slick-list {
+    margin: 0 -15px;
+}
+.team__slide {
+    padding: 0 15px;
+}
+.team__slide:hover .team__socials {
+    transform: translateY(0);
+}
+.team__image-box {
+    margin-bottom: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+}
+.team__image {
+    position: relative;
+    height: 340px;
+}
+.team__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team__socials {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+    transform: translateY(50%);
+    transition: all .3s;
+}
+.team__socials-item {
+    margin-right: 12px;
+}
+.team__socials-item:last-child {
+    margin-right: 0;
+}
+.team__socials-link {
+    display: block;
+    line-height: 0;
+}
+.team__socials-link path {
+    transition: all .3s;
+}
+.team__socials-link:hover path {
+    fill: #fff;
+}
+.team__info {
+    text-align: center;
+}
+.team__info-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+.team__info-position {
+    color: #787A80;
+}
+
+.team__slider-arrows {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.team__slider-arrows {
+    display: flex;
+}
+.team__slider-arrow {
+    display: block;
+    line-height: 0;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+}
+
+.team__slider-arrow path {
+    transition: all .3s;
+}
+.team__slider-arrow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #FF3F3A;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .3s;
+}
+
+
+.team__slider-arrow:hover path {
+    fill: #fff;
+}
+.team__slider-arrow:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+.team__slider-prev {
+    margin-right: 24px;
+}
+.team__slider-next {
+
+}
+/* ---------------------------TESTIMONIALS------------------------------------ */
+/* ---------------------------TESTIMONIALS------------------------------------ */
+
+
+.testimonials {
+    background: #F4F5F7;
+}
+
+.testimonials__inner {
+}
+.testimonials__heading {
+    margin-bottom: 60px;
+}
+
+.heading__subtitle {
+}
+.heading__title {
+}
+.testimonials__slider-wrapper {
+    padding: 0 50px;
+    position: relative;
+}
+.testimonials__slider {
+    max-width: 1020px;
+    margin: 0 auto;
+    
+}
+
+.testimonials__slide {
+    padding: 64px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.testimonials__slide-inner {
+    max-width: 810px;
+    margin: 0 auto;
+    padding-left:  58px;
+}
+.testimonials_quote {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 24px;
+    position: relative;
+}
+.testimonials_quote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -58px;
+
+    background: url(../images/icons/quate-icon.svg) 0 0 / 100% no-repeat;
+    width: 28px;
+    height: 20px;
+}
+.testimonials__user {
+    display: flex;
+    align-items: center;
+}
+.testimonials__avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.testimonials__info {
+}
+.testimonials__info-name {
+    color: #1E212C;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 4px;
+}
+.testimonials__info-position {
+    color: #787A80;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.testimonials__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+.testimonials__arrow path{
+    transition: all .3s;
+}
+.testimonials__arrow::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    background-color: #FF3F3A;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .3s;
+}
+.testimonials__prev {
+    left: 0;
+}
+.testimonials__prev::before {
+    transform: translate(-50%, -50%) scale(0);
+    left: 22%;
+}
+.testimonials__next {
+    right: 0;
+    justify-content: flex-end;
+}
+
+.testimonials__next::before {
+    transform: translate(50%, -50%) scale(0);
+    right: 22%;
+}
+
+.testimonials__arrow:hover path{
+    fill: #fff;
+}
+
+.testimonials__prev:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+.testimonials__next:hover::before {
+    transform: translate(50%, -50%) scale(1);
 }
