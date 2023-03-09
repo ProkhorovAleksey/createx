@@ -567,7 +567,7 @@ margin-right: 16px;
 /* ---------------------------TEAM------------------------------------ */
 
 .team {
-    background: url(../images/decor/team-bg.svg) 210px 30px no-repeat, #F4F5F7;
+    background: url(../images/decor/team-bg.svg) calc(50% + 40px) calc(50% - 128px) no-repeat, #F4F5F7;
 }
 .team__inner {
 }
@@ -703,10 +703,23 @@ margin-right: 16px;
 
 
 .testimonials {
-    background: #F4F5F7;
+    background-color: #F4F5F7;
+    position: relative;
+}
+.testimonials::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-44%, -55%);
+    background: url(../images/decor/testi-bg.svg) 0 0 / 100% no-repeat;
+    width: 1971px;
+    height: 816px;
 }
 
 .testimonials__inner {
+    position: relative;
+    z-index: 1;
 }
 .testimonials__heading {
     margin-bottom: 60px;
@@ -719,6 +732,7 @@ margin-right: 16px;
 .testimonials__slider-wrapper {
     padding: 0 50px;
     position: relative;
+    margin-bottom: 45px;
 }
 .testimonials__slider {
     max-width: 1020px;
@@ -827,4 +841,38 @@ margin-right: 16px;
 }
 .testimonials__next:hover::before {
     transform: translate(50%, -50%) scale(1);
+}
+
+.testimonials__dots .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials__dots li {
+    margin-right: 12px;
+}
+.testimonials__dots li:last-child {
+    margin-right: 0;
+}
+
+.testimonials__dots button {
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    
+}
+
+.testimonials__dots button::before {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #B3B7BC;
+    border-radius: 3px;
+}
+.testimonials__dots .slick-active button::before{
+    background-color: #424551;
+    transition: all .3s;
 }
