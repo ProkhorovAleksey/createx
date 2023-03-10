@@ -9,6 +9,9 @@ $(function () {
     
     $('.team__slider').slick({
         arrows:false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToScroll: 1,
         slidesToShow: 4,
         infinite: true,
         draggable:false,
@@ -27,6 +30,9 @@ $(function () {
     $('.testimonials__slider').slick({
         arrows:false,
         dots: true,
+        draggable:false,
+        infinite: false,
+        
         appendDots: $('.testimonials__dots'),
     })
     $('.testimonials__prev').on('click', function(e){
