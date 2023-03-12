@@ -34,6 +34,9 @@ html,body {
 .main__testimonials {
     padding-bottom: 195px;
 }
+.main__jobs {
+    padding-bottom: 177px;
+}
 .button {
     display: inline-block;
     letter-spacing: 0.5px;
@@ -874,5 +877,55 @@ margin-right: 16px;
 }
 .testimonials__dots .slick-active button::before{
     background-color: #424551;
+    transition: all .3s;
+}
+
+/* ---------------------------JOBS------------------------------------ */
+/* ---------------------------JOBS------------------------------------ */
+
+.jobs {
+    background-color: #F4F5F7;
+    
+}
+.jobs__inner {
+    position: relative;
+}
+.jobs__inner::before {
+    content: "";
+    position: absolute;
+    top: 340px;
+    left: -240px;
+    background: url(../images/decor/5.svg) 0 0 / 100% no-repeat;
+    width:90px;
+    height:90px;
+}
+.jobs__heading {
+}
+
+.heading__subtitle {
+}
+.heading__title {
+    margin-bottom: 60px;
+}
+.jobs__grid {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(6,1fr);
+    gap: 40px 100px;
+}
+.jobs__grid-item {
+}
+.jobs__grid-link {
+    display: block;
+}
+.jobs__grid-link img {
+width: 100%;
+height: 100%;
+filter: saturate(0) blur(1px);
+transition: all 1.3s;
+opacity: 0.4;
+}
+.jobs__grid-link:hover img {
+    filter: saturate(1) blur(0);
+    opacity: 1;
     transition: all .3s;
 }
