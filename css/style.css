@@ -37,6 +37,12 @@ html,body {
 .main__jobs {
     padding-bottom: 177px;
 }
+.main__program {
+    padding: 115px 0 186px;
+}
+.main__blog {
+    padding-bottom: 200px;
+}
 .button {
     display: inline-block;
     letter-spacing: 0.5px;
@@ -900,12 +906,12 @@ margin-right: 16px;
     height:90px;
 }
 .jobs__heading {
+    margin-bottom: 60px;
 }
 
 .heading__subtitle {
 }
 .heading__title {
-    margin-bottom: 60px;
 }
 .jobs__grid {
     display: grid;
@@ -928,4 +934,124 @@ opacity: 0.4;
     filter: saturate(1) blur(0);
     opacity: 1;
     transition: all .3s;
+}
+
+/* ----------------------------PROGRAM------------------------------------ */
+/* ----------------------------PROGRAM------------------------------------ */
+
+
+.program {
+}
+
+.program__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.program__content {
+    margin-right: 30px;
+    max-width: 600px;
+}
+.program__heading {
+    margin-bottom: 60px;
+}
+
+.heading__subtitle {
+}
+.heading__title {
+}
+.program__acc {
+}
+.program__acc-item {
+    margin-bottom: 24px;
+}
+.program__acc-link {
+    display: block;
+    padding-left: 40px;
+}
+.program__acc-item:last-child {
+    margin-bottom: 0;
+}
+.program__acc-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    position: relative;
+    border-radius: 2px;
+}
+.program__acc-head span {
+    font-weight: 400;
+    color: #FF3F3A;
+}
+.program__acc-head::before,
+.program__acc-head::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 18px;
+    height: 2px;
+    background-color: #FF3F3A;
+}
+.program__acc-head::after {
+    transform: rotate(90deg);
+    transition: all .3s;
+}
+.program__acc-link--active .program__acc-head::after {
+    transform: rotate(0deg);
+}
+.program__acc-text {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+.program__image {
+}
+
+/* ----------------------------BLOG------------------------------------ */
+/* ----------------------------BLOG------------------------------------ */
+
+
+.blog {
+}
+
+.blog__inner {
+}
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.blog__heading {
+}
+.blog__btn {
+}
+.blog__row {
+}
+.blog__item {
+}
+.blog__item-link {
+}
+.blog__item-inner {
+}
+.blog__image-box {
+}
+.blog__item-content {
+}
+.blog__item-info {
+}
+.blog__info-dir {
+}
+.blog__info-date {
+}
+.blog__info-time {
+}
+.blog__item-title {
+}
+.blog__item-text {
+}
+.blog__item-button {
 }
