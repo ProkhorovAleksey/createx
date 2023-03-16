@@ -85,4 +85,23 @@ $(function () {
         top = $(id).offset().top -200
         $('body,html').animate({ scrollTop: top }, 800)
     });
+
+    setInterval(() => {
+        if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
+            $('.burger').addClass('burger--follow')
+        } else {
+                $('.burger').removeClass('burger--follow')
+        }
+    }, 0);
+    $(function() {
+        $('.burger').click(function(){
+            $(this).toggleClass('active');
+        });
+    });
+    $('.burger, .overlay').on('click', function(e) {
+        e.preventDefault()
+        $('.header__top').toggleClass('header__top--open')
+        $('.overlay').toggleClass('overlay--show')
+    })
+
 });
