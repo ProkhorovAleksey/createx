@@ -9,14 +9,40 @@ $(function () {
 
     $('.team__slider').slick({
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
         slidesToScroll: 1,
         slidesToShow: 4,
         infinite: true,
         draggable: false,
         waitForAnimate: false,
         appendArrows: $('.team__slider-arrows'),
+        responsive: 
+        [
+            {
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 3,
+            },
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 2,
+                    draggable: true,
+                    dots:true,
+                    appendDots: $('.team__dots'),
+                },
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    draggable: true,
+                    dots: true,
+                    appendDots: $('.team__dots'),
+                },
+            },
+        ]
+        
     });
     $('.team__slider-prev').on('click', function (e) {
         e.preventDefault()
@@ -34,6 +60,14 @@ $(function () {
         infinite: false,
 
         appendDots: $('.testimonials__dots'),
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    draggable: true,
+                },
+            }
+        ]
     })
     $('.testimonials__prev').on('click', function (e) {
         e.preventDefault()
