@@ -1606,7 +1606,7 @@ margin-bottom: 38px;
     .header__user-nav {
         margin-bottom: 30px;
     }
-}
+
 /*----------------------------------*/
     .heading__title {
         font-size: 37px
@@ -1628,6 +1628,7 @@ margin-bottom: 38px;
     .cert__text {
         text-align: center;
     }
+}
 /*-----------------------------------------900----------------------------------------*/
 @media (max-width: 900px) {
     .header__content {
@@ -1742,7 +1743,7 @@ margin-bottom: 38px;
         margin: 0 0 20px 0;
     }
     .cert__logos-item:last-child {
-        margin: 0;
+        margin: 0; 
     }
 }
 
